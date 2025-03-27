@@ -46,7 +46,7 @@
   display: inline-block;
   font-weight: 700;
   line-height: 1.6;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   border-bottom: 2px solid var(--c-green);
 }
