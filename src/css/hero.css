@@ -1,0 +1,36 @@
+.rings {
+  position: absolute;
+  right: 50%;
+  top: 16%;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 180px 0;
+  text-align: center;
+}
+
+.headline {
+  font-size: var(--fs-40);
+  line-height: 1;
+}
+
+.description {
+  color: var(--c-grey);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.contact {
+  text-transform: uppercase;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid var(--c-green);
+}
+
+.contact:hover {
+  color: var(--c-green);
+}
