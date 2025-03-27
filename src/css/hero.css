@@ -1,7 +1,7 @@
 .rings {
   position: absolute;
-  right: 50%;
-  top: 16%;
+  left: -230px;
+  top: 140px;
 }
 
 .hero-container {
@@ -33,4 +33,49 @@
 
 .contact:hover {
   color: var(--c-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .rings {
+    left: -330px;
+    top: 105px;
+  }
+
+  .hero-container {
+    display: block;
+    padding: 90px 0;
+    text-align: left;
+  }
+
+  .headline {
+    font-size: var(--fs-72);
+    margin-bottom: 64px;
+  }
+
+  .description {
+    max-width: 445px;
+    font-size: var(--fs-18);
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .rings {
+    left: -100px;
+    top: 140px;
+  }
+
+  .hero-container {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .headline {
+    font-size: var(--fs-88);
+    margin-bottom: 40px;
+  }
+
+  .description {
+    margin-bottom: 64px;
+  }
 }
