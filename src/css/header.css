@@ -1,3 +1,4 @@
+/* #region Styles for Mobile devices */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -30,7 +31,9 @@
 .icon:hover {
   fill: var(--c-green);
 }
+/* #endregion */
 
+/* #region Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .nav {
     margin: 28px 0;
@@ -50,9 +53,12 @@
     height: 24px;
   }
 }
+/* #endregion */
 
+/* #region Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .nav {
     margin: 40px 0;
   }
 }
+/* #endregion */
