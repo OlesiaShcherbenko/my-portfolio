@@ -1,36 +1,72 @@
 <footer class="footer">
   <div class="container">
-    <div>
-      <h2 class="headline">Contact</h2>
-      <p class="description">
-        Thank you for exploring my work! If you think I’d be a good fit for your
-        team, let’s connect. Fill out the form, and I’ll respond as soon as I
-        can.
-      </p>
+    <div class="contact-container">
+      <div>
+        <h2 class="headline">Contact</h2>
+        <p class="description">
+          Thank you for exploring my work! If you think I’d be a good fit for
+          your team, let’s connect. Fill out the form, and I’ll respond as soon
+          as I can.
+        </p>
+      </div>
+      <form
+        action="https://hook.eu2.make.com/o3w4snpa8ugafrgfr9a6cyifgj0mbf7f"
+        method="post"
+        class="contact-form"
+      >
+        <label class="input-wrapper"
+          ><input
+            type="text"
+            name="name"
+            placeholder="Name"
+            autocomplete="on"
+            pattern="[A-Za-z]+"
+            required
+        /></label>
+
+        <label class="input-wrapper"
+          ><input
+            type="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="on"
+            required
+        /></label>
+
+        <label class="input-wrapper">
+          <textarea name="message" rows="6" placeholder="Message"></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
     </div>
-    <form
-      action="https://hook.eu2.make.com/o3w4snpa8ugafrgfr9a6cyifgj0mbf7f"
-      method="post"
-      class="contact-form"
-    >
-      <label class="input-wrapper"
-        ><input type="text" name="name" placeholder="Name" required
-      /></label>
-
-      <label class="input-wrapper"
-        ><input type="email" name="email" placeholder="Email" required
-      /></label>
-
-      <label class="input-wrapper" class="visually-hidden">
-        <textarea
-          name="message"
-          cols="30"
-          rows="3"
-          placeholder="Message"
-        ></textarea>
-      </label>
-
-      <button class="btn" type="submit">Send Message</button>
-    </form>
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo"
+        >olesiashcherbenko</a
+      >
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://github.com/OlesiaShcherbenko"
+            target="_blank"
+            ><svg class="icon" width="24" height="24">
+              <use href="/img/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/olesia-shcherbenko-822488212/"
+            target="_blank"
+          >
+            <svg class="icon">
+              <use href="/img/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </footer>
