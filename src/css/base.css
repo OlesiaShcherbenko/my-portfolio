@@ -27,3 +27,15 @@
   color: var(--c-white);
   background-color: var(--c-black);
 }
+
+/* Styles for Mobile devices */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* Styles for Desktop devices */
+body {
+  gap: 150px;
+}
