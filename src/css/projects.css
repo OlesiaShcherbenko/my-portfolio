@@ -1,7 +1,6 @@
 /* #region Styles for Mobile devices */
 .projects {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px 0;
 }
 
 .projects .headline {
@@ -31,7 +30,8 @@
 .tags {
   display: flex;
   gap: 16px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 8px;
 }
 
 .tag {
@@ -84,8 +84,7 @@
 /* #region Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .projects {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding: 150px 0;
   }
 
   .projects .headline {

@@ -69,6 +69,11 @@ textarea {
   padding: 0;
 }
 
+.btn:hover {
+  color: var(--c-green);
+  cursor: pointer;
+}
+
 .foo-rings {
   position: absolute;
   left: -200px;
@@ -84,7 +89,7 @@ textarea {
 /* #region Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .contact-container {
-    margin-bottom: 124px;
+    margin-bottom: 150px;
   }
 
   .contact-form {
@@ -123,7 +128,11 @@ textarea {
 
   .foo-rings {
     left: -100px;
-    bottom: 90px;
+    bottom: 160px;
+  }
+
+  .made-with-love {
+    text-align: left;
   }
 }
 /* #endregion */
