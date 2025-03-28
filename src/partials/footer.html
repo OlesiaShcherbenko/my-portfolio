@@ -13,22 +13,25 @@
         action="https://hook.eu2.make.com/24ar6h12tjyp0hk7th1y7qt5owshubqt"
         method="post"
         class="contact-form"
-        id="contactForm"
+        accept-charset="UTF-8"
+        role="form"
       >
-        <lable class="input-wrapper astetisk">
+        <label class="input-wrapper astetisk" for="name">
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Name"
             autocomplete="on"
-            pattern="[A-Za-z]+"
+            pattern="[A-Za-z\s]+"
             minlength="3"
             required
+            aria-required="true"
+            aria-label="Enter your name"
           />
-        </lable>
+        </label>
 
-        <label class="input-wrapper astetisk">
+        <label class="input-wrapper astetisk" for="email">
           <input
             type="email"
             id="email"
@@ -36,14 +39,24 @@
             placeholder="Email"
             autocomplete="on"
             required
+            aria-required="true"
+            aria-label="Enter your email address"
           />
         </label>
 
-        <label class="input-wrapper">
-          <textarea name="message" rows="4" placeholder="Message"></textarea>
+        <label class="input-wrapper" for="message">
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Message"
+            aria-required="false"
+            aria-label="Enter your message"
+          ></textarea>
         </label>
 
-        <button class="btn" type="submit">Send Message</button>
+        <button class="btn" type="submit" aria-label="Send Message">
+          Send Message
+        </button>
       </form>
     </div>
     <p class="made-with-love">Made with ❤️ by Olesia Shcherbenko</p>
