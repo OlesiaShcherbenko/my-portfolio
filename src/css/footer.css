@@ -32,6 +32,8 @@
 
 .input-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 input,
@@ -51,7 +53,6 @@ textarea {
   background: transparent;
   outline: transparent;
   resize: none;
-  cursor: crosshair;
 }
 
 .input-wrapper > *::placeholder {
@@ -67,25 +68,6 @@ textarea {
 input:focus,
 textarea:focus {
   border-bottom: 1px solid var(--c-green);
-}
-
-input:invalid,
-textarea:invalid {
-  border-bottom: 1px solid var(--c-red);
-}
-
-.icon-invalid {
-  display: none;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 35%;
-  right: 0;
-  translate: -50% -50%;
-}
-
-.foo input:focus-visible:invalid ~ .icon-invalid {
-  display: inline-block;
 }
 
 .btn {
