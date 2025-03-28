@@ -1,7 +1,7 @@
 /* #region Styles for Mobile devices */
 .rings {
   position: absolute;
-  left: -230px;
+  left: -200px;
   top: 140px;
 }
 
@@ -28,7 +28,7 @@
 .contact {
   text-transform: uppercase;
   line-height: 1.6;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   border-bottom: 2px solid var(--c-green);
 }
 

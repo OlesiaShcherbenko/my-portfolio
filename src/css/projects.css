@@ -1,4 +1,9 @@
 /* #region Styles for Mobile devices */
+.projects {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .projects .headline {
   text-align: center;
   margin-bottom: 40px;
@@ -46,7 +51,7 @@
   display: inline-block;
   font-weight: 700;
   line-height: 1.6;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   border-bottom: 2px solid var(--c-green);
 }
@@ -78,6 +83,11 @@
 
 /* #region Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
+  .projects {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
   .projects .headline {
     margin-bottom: 80px;
   }

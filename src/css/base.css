@@ -5,6 +5,8 @@
   line-height: 1.5;
   font-weight: 500;
   font-style: normal;
+  color: var(--c-white);
+  background-color: var(--c-black);
 
   --fs-16: 1rem;
   --fs-18: 1.125rem;
@@ -18,24 +20,10 @@
   --fs-88: 5.5rem;
 
   --c-white: #ffffff;
+  --c-white-50: rgb(255, 255, 255, 0.5);
   --c-grey: #d9d9d9;
   --c-dark-grey: #242424;
   --c-green: #4ee1a0;
   --c-black: #151515;
   --c-reb: #ff6f5b;
-
-  color: var(--c-white);
-  background-color: var(--c-black);
-}
-
-/* Styles for Mobile devices */
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
-
-/* Styles for Desktop devices */
-body {
-  gap: 150px;
 }

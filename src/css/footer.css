@@ -1,0 +1,129 @@
+/* #region Styles for Mobile devices */
+.foo {
+  position: relative;
+  background-color: var(--c-dark-grey);
+  padding: 60px 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 84px;
+}
+
+.foo .headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foo .description {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 343px;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 0px 17px 24px;
+  border: none;
+  border-bottom: 1px solid var(--c-white);
+  background: transparent;
+  outline: transparent;
+  resize: none;
+}
+
+.input-wrapper > *::placeholder {
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--c-white-50);
+  text-transform: uppercase;
+}
+
+.btn {
+  display: block;
+  align-self: flex-end;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.6;
+  letter-spacing: 0.14em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--c-green);
+  color: var(--c-white);
+  padding: 0;
+}
+
+.foo-rings {
+  position: absolute;
+  left: -200px;
+  bottom: 110px;
+}
+
+.made-with-love {
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .contact-container {
+    margin-bottom: 124px;
+  }
+
+  .contact-form {
+    max-width: 445px;
+  }
+
+  .foo-rings {
+    left: -330px;
+    bottom: 90px;
+  }
+}
+/* #endregion */
+
+/* #region Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .text-wrapper {
+    max-width: 445px;
+    margin-right: 220px;
+  }
+
+  .foo .headline {
+    text-align: left;
+    margin-bottom: 36px;
+  }
+
+  .foo .description {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .foo-rings {
+    left: -100px;
+    bottom: 90px;
+  }
+}
+/* #endregion */
