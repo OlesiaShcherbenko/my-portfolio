@@ -15,7 +15,7 @@ document
 
       if (response.ok) {
         // Redirect ONLY after a successful submission
-        window.location.href = "/thank-you.html";
+        window.location.href = "./thank-you.html";
       } else {
         alert("Something went wrong. Please try again.");
       }
