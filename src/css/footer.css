@@ -55,7 +55,16 @@ textarea {
   resize: none;
 }
 
-.input-wrapper > *::placeholder {
+.input-wrapper.astetisk::before {
+  content: "*";
+  color: var(--c-red);
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.input-wrapper::placeholder {
   font-family: "Space Grotesk";
   font-size: 16px;
   font-style: normal;
