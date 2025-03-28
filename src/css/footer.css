@@ -30,16 +30,28 @@
   max-width: 343px;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
 input,
 textarea {
   box-sizing: border-box;
   width: 100%;
   padding: 0px 0px 17px 24px;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--c-white);
   border: none;
   border-bottom: 1px solid var(--c-white);
   background: transparent;
   outline: transparent;
   resize: none;
+  cursor: crosshair;
 }
 
 .input-wrapper > *::placeholder {
@@ -50,6 +62,30 @@ textarea {
   line-height: 1.6;
   color: var(--c-white-50);
   text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid var(--c-green);
+}
+
+input:invalid,
+textarea:invalid {
+  border-bottom: 1px solid var(--c-red);
+}
+
+.icon-invalid {
+  display: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 35%;
+  right: 0;
+  translate: -50% -50%;
+}
+
+.foo input:focus-visible:invalid ~ .icon-invalid {
+  display: inline-block;
 }
 
 .btn {
