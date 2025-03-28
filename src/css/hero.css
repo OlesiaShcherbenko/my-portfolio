@@ -17,12 +17,14 @@
 .headline {
   font-size: var(--fs-40);
   line-height: 1;
+  cursor: default;
 }
 
 .description {
   color: var(--c-grey);
   font-weight: 500;
   line-height: 1.6;
+  cursor: default;
 }
 
 .contact {

@@ -15,11 +15,13 @@
 .foo .headline {
   text-align: center;
   margin-bottom: 20px;
+  cursor: default;
 }
 
 .foo .description {
   text-align: center;
   margin-bottom: 50px;
+  cursor: default;
 }
 
 .contact-form {
@@ -109,6 +111,7 @@ textarea:focus {
 
 .made-with-love {
   text-align: center;
+  cursor: default;
 }
 
 /* #endregion */
