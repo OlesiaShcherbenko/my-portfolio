@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Olesia Shcherbenko</title>
     <script type="module" crossorigin src="/my-portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-Deu91Yk-.css">
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/index-Dt-RCMVo.css">
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,9 @@
             class="nav-link"
             href="https://github.com/OlesiaShcherbenko"
             target="_blank"
-            ><svg class="icon" width="24" height="24">
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+            ><svg class="icon" aria-hidden="true">
               <use href="/my-portfolio/assets/icons-CWQCRTLn.svg#icon-github"></use>
             </svg>
           </a>
@@ -36,8 +38,10 @@
             class="nav-link"
             href="https://www.linkedin.com/in/olesia-shcherbenko-822488212/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
           >
-            <svg class="icon">
+            <svg class="icon" aria-hidden="true">
               <use href="/my-portfolio/assets/icons-CWQCRTLn.svg#icon-linkedin"></use>
             </svg>
           </a>
@@ -59,7 +63,7 @@
         Junior Front-End Developer passionate about building responsive and
         accessible web applications.
       </p>
-      <a class="contact" href="mailto:olessja.shcherbenko@gmail.com"
+      <a class="contact" href="#contact" aria-label="Go to contact form"
         >Contact me</a
       >
     </div>
@@ -218,7 +222,7 @@
   </div>
 </section>
 
-    <footer class="foo">
+    <footer id="contact" class="foo">
   <div class="container">
     <div class="contact-container">
       <div class="text-wrapper">
@@ -233,22 +237,25 @@
         action="https://hook.eu2.make.com/24ar6h12tjyp0hk7th1y7qt5owshubqt"
         method="post"
         class="contact-form"
-        id="contactForm"
+        accept-charset="UTF-8"
+        role="form"
       >
-        <lable class="input-wrapper">
+        <label class="input-wrapper astetisk" for="name">
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Name"
             autocomplete="on"
-            pattern="[A-Za-z]+"
+            pattern="[A-Za-z\s]+"
             minlength="3"
             required
+            aria-required="true"
+            aria-label="Enter your name"
           />
-        </lable>
+        </label>
 
-        <label class="input-wrapper">
+        <label class="input-wrapper astetisk" for="email">
           <input
             type="email"
             id="email"
@@ -256,14 +263,24 @@
             placeholder="Email"
             autocomplete="on"
             required
+            aria-required="true"
+            aria-label="Enter your email address"
           />
         </label>
 
-        <label class="input-wrapper">
-          <textarea name="message" rows="4" placeholder="Message"></textarea>
+        <label class="input-wrapper" for="message">
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Message"
+            aria-required="false"
+            aria-label="Enter your message"
+          ></textarea>
         </label>
 
-        <button class="btn" type="submit">Send Message</button>
+        <button class="btn" type="submit" aria-label="Send Message">
+          Send Message
+        </button>
       </form>
     </div>
     <p class="made-with-love">Made with ❤️ by Olesia Shcherbenko</p>
